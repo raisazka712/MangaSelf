@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(163, 8, 202);
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #F8F9FA;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex-grow: 1;
+    height: fit-content;
+    box-shadow: 0px 8px 15px rgba(154, 160, 185, 0.516), 0 15px 40px rgba(166, 173, 201, 0.158);
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: rgb(163, 8, 202);
+}
+
+.input_section > form > .input {
+    margin: 18px 0;
+}
+
+.input_section > form > button {
+    background-color: rgb(163, 8, 202);
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.input_section > form > .input > label {
+    color: rgb(163, 8, 202);;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: rgb(163, 8, 202);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type=text], input[type=number] {
+    font-family: Raleway, sans-serif;
+    background: #F5F1FF;
+    border: 1px solid rgb(163, 8, 202);
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.search_section {
+    margin: 16px 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex-grow: 1;
+    height: fit-content;
+    background: #F8F9FA;
+    box-shadow: 0px 8px 15px rgba(154, 160, 185, 0.516), 0 15px 40px rgba(166, 173, 201, 0.158);
+}
+
+.search_section > h2 {
+    color: rgb(163, 8, 202);;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 30px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+    color:  rgb(163, 8, 202);
+    font-weight: bold;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: rgb(163, 8, 202);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin-top: 40px;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    height: fit-content;
+    background: #F8F9FA;
+    box-shadow: 0px 8px 15px rgba(154, 160, 185, 0.516), 0 15px 40px rgba(166, 173, 201, 0.158);
+}
+
+.book_shelf > h2 {
+    color: rgb(163, 8, 202);
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 8px;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .blue {
+    background-color: rgb(92, 171, 255);
+    color: white;
+}
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.custom-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .dialog-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px;
+  }
+
+  .dialog-buttons button {
+    margin-left: 15px;
+    padding: 7px;
+  }
+  
+  .cancelButton{
+    background-color: rgb(30, 41, 243);
+    color: white;
+    font-weight: bold;
+  }
+
+  .confirmButton{
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+  }
